@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final Programación III</title>
+    <link rel="shortcut icon" href="img/filosofia.jpeg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="marca">
+            <div class="logo">
+                <a href="index.html">Deymon Study</a>
+            </div>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="sobre_nosotros.html">Sobre Nosotros</a>
+                <a href="temas.html">Temas del Curso</a>
+                <a href="registrarse.html">Registrarse</a>
+            </nav>
+        </div>
+
+        <style>
+            /* Estilos generales */
+            body,
+            html {
+                margin: 0;
+                padding: 0;
+                font-family: 'Poppins', sans-serif;
+                box-sizing: border-box;
+            }
+
+            .box-area {
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+            }
+
+            header {
+                background: #222f3e;
+                padding: 20px 0;
+                color: #fff;
+                text-align: center;
+            }
+
+            .marca {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            .logo a {
+                text-decoration: none;
+                font-size: 32px;
+                font-weight: bold;
+                color: #fff;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: #fff;
+                margin: 0 15px;
+                font-size: 18px;
+            }
+
+            nav a:hover {
+                color: #f2f2f2;
+            }
+
+            .content-area {
+                flex: 1;
+                padding: 50px 20px;
+                background: #f9f9f9;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+
+            .card {
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                width: 300px;
+                margin: 20px;
+                text-align: center;
+                transition: transform 0.3s;
+            }
+
+            .card:hover {
+                transform: translateY(-10px);
+            }
+
+            .card img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+            }
+
+            .card h3 {
+                font-size: 24px;
+                margin: 20px 0;
+            }
+
+            .card p {
+                font-size: 16px;
+                margin: 0 20px 20px;
+                color: #555;
+            }
+
+            .card a {
+                display: block;
+                padding: 15px;
+                background: #222f3e;
+                color: #fff;
+                text-decoration: none;
+                font-size: 18px;
+                margin: 20px;
+                border-radius: 5px;
+                transition: background 0.3s;
+            }
+
+            .card a:hover {
+                background: #576574;
+            }
+
+            footer {
+                background: #222f3e;
+                padding: 20px 0;
+                color: #fff;
+                text-align: center;
+            }
+
+            .footer-nav a {
+                text-decoration: none;
+                color: #fff;
+                margin: 0 15px;
+                font-size: 16px;
+            }
+
+            .footer-nav a:hover {
+                font-weight: 700;
+                color: #f2f2f2;
+            }
+
+            footer p {
+                margin-top: 10px;
+                font-size: 14px;
+                letter-spacing: 1px;
+            }
+
+            @media (max-width: 768px) {
+                .logo a {
+                    font-size: 24px;
+                }
+
+                nav a {
+                    font-size: 16px;
+                    margin: 5px;
+                }
+
+                .card h3 {
+                    font-size: 20px;
+                }
+
+                .card p {
+                    font-size: 14px;
+                }
+
+                .card a {
+                    font-size: 16px;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .logo a {
+                    font-size: 20px;
+                }
+
+                nav {
+                    display: none;
+                }
+
+                .card h3 {
+                    font-size: 18px;
+                }
+
+                .card p {
+                    font-size: 12px;
+                }
+
+                .card a {
+                    font-size: 14px;
+                }
+            }
+        </style>
+    </header>
+
+    <div class="banner-area">
+        <h2>Física en la educación</h2>
+    </div>
+
+    <div class="content-area">
+        <div class="card">
+            <img src="img/images.jpeg" alt="Física Mediante la Lúdica">
+            <h3>Física Mediante la Lúdica</h3>
+            <p>Explora cómo la física se convierte en un emocionante terreno de juego a través de actividades lúdicas y
+                creativas.</p>
+            <a href="temas.html#tab1">Leer más</a>
+        </div>
+        <div class="card">
+            <img src="img/img2.jpeg" alt="Temas a Tratar">
+            <h3>Temas a Tratar</h3>
+            <p>Descubre conceptos como el MRU, caída libre y movimiento de proyectiles con herramientas educativas
+                interactivas.</p>
+            <a href="temas.html#tab2">Leer más</a>
+        </div>
+        <div class="card">
+            <img src="img/simulacion.jpeg" alt="Simulación de Movimiento de Proyectiles">
+            <h3>Simulación de Temas de Física</h3>
+            <p>Estudia cómo la velocidad inicial y la gravedad afectan el movimiento de proyectiles mediante
+                simulaciones.</p>
+            <a href="temas.html#tab3">Leer más</a>
+        </div>
+        <div class="card">
+            <img src="img/nosotros.jpeg"Sobre Nosotros">
+            <h3>Sobre Nosotros</h3>
+            <p>Conoce más sobre nuestra misión y cómo hacemos que la física sea accesible y divertida para todos.</p>
+            <a href="sobre_nosotros.html">Leer más</a>
+        </div>
+        <div class="card">
+            <img src="img/registrarse.png" alt="Registrarse">
+            <h3>Registrarse</h3>
+            <p>Únete a nosotros y accede a cursos interactivos sobre física y más.</p>
+            <a href="registrarse.html">Leer más</a>
+        </div>
+    </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-nav">
+            <a href="index.html">Inicio</a>
+            <a href="sobre_nosotros.html">Acerca de nosotros</a>
+            <a href="temas.html">Temas del Curso</a>
+            <a href="registrarse.html">Registrarse</a>
+        </div>
+        <p>© 2024 Deymon & Asociados</p>
+    </footer>
+</body>
+
+</html>
