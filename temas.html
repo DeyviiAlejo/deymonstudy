@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Temas a Tratar - Proyecto Programación III</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/filosofia.jpeg">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos generales */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .box-area {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #222f3e;
+            padding: 20px 0;
+            color: #fff;
+            text-align: center;
+        }
+
+        .marca {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo a {
+            text-decoration: none;
+            font-size: 32px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #f2f2f2;
+        }
+
+        .content-area {
+            flex: 1;
+            padding: 50px 20px;
+            background: #f9f9f9;
+        }
+
+        .content-area .marca {
+            max-width: 800px;
+            margin: 100px auto;
+            text-align: justify;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            background: #222f3e;
+            color: #fff;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .tab:hover,
+        .tab.active {
+            background: #576574;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .content-area h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .content-area p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .content-area img,
+        .content-area iframe {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        footer {
+            background: #222f3e;
+            padding: 20px 0;
+            color: #fff;
+            text-align: center;
+        }
+
+        .footer-nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        .footer-nav a:hover {
+            font-weight: 700;
+            color: #f2f2f2;
+        }
+
+        footer p {
+            margin-top: 10px;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 768px) {
+            .logo a {
+                font-size: 24px;
+            }
+
+            nav a {
+                font-size: 16px;
+                margin: 5px;
+            }
+
+            .content-area h2 {
+                font-size: 28px;
+            }
+
+            .content-area p {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo a {
+                font-size: 20px;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .content-area h2 {
+                font-size: 24px;
+            }
+
+            .content-area p {
+                font-size: 14px;
+            }
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-area">
+        <header>
+            <div class="marca">
+                <div class="logo">
+                    <a href="index.html">Deymon Study</a>
+                </div>
+                <nav>
+                    <a href="index.html">Inicio</a>
+                    <a href="sobre_nosotros.html">Sobre Nosotros</a>
+                    <a href="temas.html">Temas del Curso</a>
+                    <a href="registrarse.html">Registrarse</a>
+                </nav>
+            </div>
+        </header>
+        <div class="content-area">
+            <div class="marca">
+                <h2>Temas a Tratar</h2>
+                <div class="tabs">
+                    <div class="tab active" data-tab="tab1">Física Mediante la Lúdica</div>
+                    <div class="tab" data-tab="tab2">Temas a Tratar</div>
+                    <div class="tab" data-tab="tab3">Simulación de Temas de Física</div>
+                </div>
+                <div id="tab1" class="tab-content active">
+                    <h3>La Física Mediante la Lúdica</h3>
+                    <p>La física, con su intrincada red de leyes y principios que gobiernan nuestro universo, puede
+                        parecer
+                        a primera vista un campo de estudio serio y complejo. Sin embargo, la física también es una
+                        fuente
+                        inagotable de diversión y descubrimiento cuando se presenta a través de actividades lúdicas y
+                        creativas. Al integrar el juego en el aprendizaje de la física, no solo se fomenta la curiosidad
+                        y
+                        el entusiasmo, sino que también se facilita la comprensión de conceptos fundamentales.</p>
+                    <img src="img/images.jpeg" alt="fisica" width="500" height="300">
+                    <p>En este contexto, exploraremos cómo la física se convierte en un emocionante terreno de juego.
+                        Desde
+                        experimentos prácticos hasta juegos de construcción y simulaciones interactivas, veremos cómo el
+                        juego puede desbloquear los secretos del movimiento, la energía, la luz y mucho más. Prepárate
+                        para
+                        embarcarte en un viaje donde la diversión se entrelaza con el conocimiento, y donde cada
+                        descubrimiento se convierte en un paso hacia una comprensión más profunda de las fuerzas que
+                        moldean
+                        nuestro mundo.</p>
+
+                    <h2>Información sobre Física Lúdica y Software Educativo</h2>
+                    <table>
+                        <caption>Recursos de Física Lúdica y Software Educativo</caption>
+                        <thead>
+                            <tr>
+                                <th>Concepto</th>
+                                <th>Descripción</th>
+                                <th>Software Educativo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Física Lúdica</td>
+                                <td>Aplicación de conceptos físicos en juegos y actividades interactivas para aprender
+                                    de
+                                    manera divertida.</td>
+                                <td>PhET Interactive Simulations, Algodoo, Physics Playground</td>
+                            </tr>
+                            <tr>
+                                <td>Software Educativo de Física</td>
+                                <td>Programas diseñados específicamente para enseñar y aprender física mediante
+                                    simulaciones
+                                    y ejercicios interactivos.</td>
+                                <td>Interactive Physics, Tracker Video Analysis, PASCO Capstone</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div id="tab2" class="tab-content">
+                    <h3>Temas a Tratar</h3>
+                    <p>¡Bienvenido/a a este emocionante viaje de aprendizaje interactivo sobre física! Vamos a explorar
+                        los
+                        conceptos de <b>MRU (Movimiento Rectilíneo Uniforme)</b>, <b>caída libre</b> y <b>movimiento de
+                            proyectiles (como el de una bala)</b> utilizando herramientas educativas que harán que estos
+                        temas cobren vida.</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XE9UXxtep6M"
+                        title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    <img src="img/img2.jpeg" alt="fisica" width="500" height="300">
+                    <h3>Movimiento de Proyectiles</h3>
+                    <p>Además, exploraremos el <b>movimiento de proyectiles</b>, como el de una bala disparada. A través
+                        del
+                        software
+                        educativo, podremos ajustar parámetros como la velocidad inicial y el ángulo de lanzamiento para
+                        simular
+                        el vuelo del proyectil. Podremos estudiar cómo factores como la velocidad inicial y la gravedad
+                        afectan
+                        el alcance y la altura máxima alcanzada por el proyectil. </p>
+
+                    <!--Es un podcast que explica el tema. Se usa la etiqueta audio-->
+                    <audio controls>
+                        <source src="Proyectiles.m4a">
+                    </audio>
+
+                    <h3>Caida Libre</h3>
+                    <p>La <b>caída libre </b>es otro concepto emocionante que abordaremos. Podremos simular el
+                        movimiento
+                        de un
+                        objeto
+                        en caída libre bajo la influencia exclusiva de la gravedad, observando cómo cambia su velocidad
+                        y
+                        posición a medida que cae. Utilizando el software, podremos analizar gráficos de velocidad y
+                        posición
+                        durante la caída, y comprender la relación entre el tiempo y la aceleración debida a la
+                        gravedad.
+                    </p>
+
+                    <iframe src="https://prezi.com/p/embed/npczlpfszl2b/" id="iframe_container" frameborder="0"
+                        webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" allow="autoplay; fullscreen"
+                        height="315" width="560"></iframe>
+
+                </div>
+                <div id="tab3" class="tab-content">
+                    <h3>Simulación de Temas de Física</h3>
+                    <p>Al utilizar estas <b>herramientas educativas interactivas</b>, no solo comprenderás mejor estos
+                        conceptos
+                        físicos fundamentales, sino que también disfrutarás del proceso de aprendizaje de una manera
+                        estimulante
+                        y divertida. La combinación de la física con la ludificación a través del software educativo
+                        hará
+                        que
+                        estos temas sean accesibles y significativos para ti. <br><br>
+                    </p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RBCoVVlR1gs?si=SD_mhLnEf-4XlREN"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
+
+                    <p>
+                        Prepárate para explorar el mundo de la física a través de la tecnología y la diversión! Juntos,
+                        descubriremos cómo la física influye en nuestro entorno y cómo podemos aplicar estos
+                        conocimientos
+                        en
+                        situaciones del mundo real. ¡Comencemos esta emocionante aventura educativa!
+                    </p>
+                    <p>Haz clic en los botones a continuación para abrir los simuladores:</p>
+                    <button onclick="openSimulator('MRU.html')">Simulador de MRU</button>
+                    <button onclick="openSimulator('caidalibre.html')">Simulador de Caída Libre</button>
+                    <button onclick="openSimulator('simulador_proyectiles.html')">Simulador de Proyectiles</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-nav">
+            <a href="index.html">Inicio</a>
+            <a href="sobre_nosotros.html">Acerca de nosotros</a>
+            <a href="temas.html">Temas del Curso</a>
+            <a href="registrarse.html">Registrarse</a>
+        </div><br>
+        <p>© 2024 Deymon & Asociados</p>
+    </footer>
+
+    <script>
+        // Script para controlar las pestañas
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', function () {
+                // Quitar la clase active de todas las pestañas y contenidos
+                document.querySelectorAll('.tab, .tab-content').forEach(item => item.classList.remove('active'));
+
+                // Agregar la clase active a la pestaña y contenido correspondiente
+                this.classList.add('active');
+                document.getElementById(this.dataset.tab).classList.add('active');
+            });
+        });
+        //abrir simulador 
+        function openSimulator(simulator) {
+            window.open(simulator, '_blank');
+        }
+    </script>
+</body>
+
+</html>

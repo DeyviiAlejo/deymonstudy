@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Proyecto Programación III</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/filosofia.jpeg">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos generales */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .box-area {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #222f3e;
+            padding: 20px 0;
+            color: #fff;
+            text-align: center;
+        }
+
+        .marca {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo a {
+            text-decoration: none;
+            font-size: 32px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #f2f2f2;
+        }
+
+        .banner-area {
+            background: url('img/fisca-moderna.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .banner-area h2 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .content-area {
+            flex: 1;
+            padding: 50px 20px;
+            background: #f9f9f9;
+        }
+
+        .content-area .marca {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: justify;
+        }
+
+        .content-area h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .content-area p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        footer {
+            background: #222f3e;
+            padding: 20px 0;
+            color: #fff;
+            text-align: center;
+        }
+
+        .footer-nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        .footer-nav a:hover {
+            font-weight: 700;
+            color: #f2f2f2;
+        }
+
+        footer p {
+            margin-top: 10px;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 768px) {
+            .logo a {
+                font-size: 24px;
+            }
+
+            nav a {
+                font-size: 16px;
+                margin: 5px;
+            }
+
+            .banner-area h2 {
+                font-size: 36px;
+            }
+
+            .content-area h2 {
+                font-size: 28px;
+            }
+
+            .content-area p {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo a {
+                font-size: 20px;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .banner-area h2 {
+                font-size: 24px;
+            }
+
+            .content-area h2 {
+                font-size: 24px;
+            }
+
+            .content-area p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-area">
+        <header>
+            <div class="marca">
+                <div class="logo">
+                    <a href="index.html">Deymon Study</a>
+                </div>
+                <nav>
+                    <a href="index.html">Inicio</a>
+                    <a href="sobre_nosotros.html">Sobre Nosotros</a>
+                    <a href="temas.html">Temas del Curso</a>
+                    <a href="registrarse.html">Registrarse</a>
+                </nav>
+            </div>
+        </header>
+        <div class="banner-area">
+            <h2>Física en la educación</h2>
+        </div>
+        <div class="content-area">
+            <div class="marca">
+                <h2>Sobre Nosotros</h2>
+                <p>¡Te damos una cordial Bienvenid@! Soy Deyvi A. Villacis, estudiante de la carrera de pedagogía de las
+                    ciencias experimentales informática de la facultad de filosofía, letras y ciencias de la educación,
+                    de la Universidad Central del Ecuador.</p>
+                <p>La física es la ciencia que estudia las propiedades de la materia, el movimiento, la energía y las
+                    interacciones entre ellas. A través de actividades lúdicas y cursos en línea, podemos hacer que los
+                    principios físicos cobren vida de una manera emocionante y accesible.</p>
+                <p>Imagina aprender sobre fuerzas, movimiento y energía mientras te sumerges en experiencias
+                    interactivas y juegos estimulantes. Los cursos en línea no solo te ofrecen la flexibilidad de
+                    estudiar desde cualquier lugar, sino que también aprovechan la tecnología para brindarte una
+                    experiencia de aprendizaje envolvente.</p>
+                <p>Descubrirás que la física puede ser emocionante y relevante para tu vida diaria a medida que
+                    exploramos conceptos a través de simulaciones interactivas, experimentos virtuales y desafíos
+                    creativos. La combinación de juego y educación en línea no solo facilita la comprensión de conceptos
+                    complejos, sino que también hace que el aprendizaje sea memorable y divertido.</p>
+                <p>Prepárate para embarcarte en un viaje donde aprenderemos cómo la física influye en nuestro entorno de
+                    una manera interactiva y entretenida. ¡Comencemos a explorar el fascinante mundo de la física a
+                    través de la ludificación y los cursos en línea!</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-nav">
+            <a href="index.html">Inicio</a>
+            <a href="sobre_nosotros.html">Acerca de nosotros</a>
+            <a href="temas.html">Temas del Curso</a>
+            <a href="registrarse.html">Registrarse</a>
+        </div><br>
+        <p>© 2024 Deymon & Asociados</p>
+    </footer>
+</body>
+
+</html>
