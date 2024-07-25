@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/filosofia.jpeg">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -43,7 +44,7 @@
                         </div>
                         <div class="form-group">
                             <label for="telefono">Teléfono:</label>
-                            <input type="tel" id="telefono" name="telefono">
+                            <input type="number" id="telefono" name="telefono">
                         </div>
                         <div class="form-group">
                             <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
@@ -64,13 +65,17 @@
                         </div>
                         <button type="submit">Registrarse</button>
                     </form>
-
+                    <button id="show-info" class="show-info-button">Mostrar Información</button>
+                    <div class="submitted-info" id="submitted-info">
+                        <h2>Información del Usuario</h2>
+                        <p id="info-display"></p>
+                    </div>
                 </div>
-                <img src="img/img1.jpeg" alt="fondo" width="50%" height="50%">
+                <img src="img/img1.jpeg" alt="fondo" >
             </div>
-
         </div>
     </div>
+
     <script src="script.js"></script>
     <footer>
         <div class="footer-nav">
@@ -78,8 +83,14 @@
             <a href="sobre_nosotros.html">Acerca de nosotros</a>
             <a href="temas.html">Temas del Curso</a>
             <a href="registrarse.html">Registrarse</a>
-        </div><br>
-        <br><p>© 2024 Deymon & Asociados</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p>© 2024 Deymon & Asociados</p>
     </footer>
 </body>
 
